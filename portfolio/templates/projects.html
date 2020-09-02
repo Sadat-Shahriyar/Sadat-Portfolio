@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    {% load static %}
+
+    <title>Sadat Shahriyar</title>
+</head>
+
+<body style="background-color: #000729; color: aliceblue; margin-bottom: 200px;">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" style="color: aliceblue;" href="{% url 'home' %}">
+                <img src="{% static 'portfolio.image/icon1.png' %}" class="rounded-circle img-fluid"
+                    style="max-width: 15%; height: auto;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" style="color: aliceblue;" href="{% url 'home' %}">Home <span
+                            class="sr-only">(current)</span></a>
+                    <!--a class="nav-item nav-link" href="#">Education</a-->
+                    <a href="{% url 'home' %}#aboutMe" class="nav-item nav-link" style="color: aliceblue;">About me</a>
+                    <a class="nav-item nav-link" style="color: aliceblue;" href="{% url 'projects' %}">Projects</a>
+                    <a href="{% url 'home' %}#contact" class="nav-item nav-link" style="color: aliceblue;">Contact</a>
+                    <a class="nav-item nav-link btn btn-outline-success ml-2" style="color: aqua;"
+                        href="https://drive.google.com/file/d/1PBileQyE-2EqhuyvQlDmgsmD_Gzk9BAX/view?usp=sharing">Resume</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="jumbotron" style="background-color: #000729;">
+                    <p style="color: aqua;">Here are some</p>
+                    <p style="font-size: 70px">Projects</p>
+                    <p style="font-size: 30px; color: darkgray;">that i have worked on.</p>
+                    <br />
+                    <p style="color: darkgray; width: 430px;">
+                        Have a look. If any of them peeks your interest
+                        then feel free to give me a knock whether it's for any query or for the source code. I will
+                        gladly
+                        help you out in any way possible.
+                    </p>
+                </div>
+                <br />
+                <br />
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 150px;">
+            <div class="col-12">
+                <div class="card" style="background-color: #000729;">
+                    <div class="card-body">
+                        <div class="media">
+                            <img src="{% static 'portfolio.image/hospital-management.png' %}" class="mr-3" alt="..."
+                                style="max-width: 50%; height: auto;">
+                            <div class="media-body">
+                                <h2 class="mt-0" style="color: aqua;">Panacea</h2>
+                                <p>A hospital management system to support the digitalization of the activities of a
+                                    hospital.
+                                    It's a demo website made as a part of Database Management System sessional course.
+                                    <br /> <br />
+                                    <strong>Features:</strong> <br />
+                                    &nbsp;
+                                    1. User login system.<br />
+                                    &nbsp;
+                                    2. Use of Django-rest-framework. <br />
+                                    &nbsp;
+                                    3. Json web token authentication.<br />
+                                    &nbsp;
+                                    4. Admin control panel <br />
+
+                                </p>
+                                <br />
+                                <p style="color: aquamarine;">
+                                    <img src="{% static 'portfolio.logo/django-logo.png' %}"
+                                        style="max-width: 15%; height: auto;" />
+                                    <img src="{% static 'portfolio.logo/django-rest-framework-logo.jpg' %}"
+                                        style="max-width: 15%; height: auto;" />
+                                    <img src="{% static 'portfolio.logo/react-logo.jpg' %}"
+                                        style="max-width: 15%; height: auto;" />
+                                    <img src="{% static 'portfolio.logo/Oracle-logo.jpg' %}"
+                                        style="max-width: 15%; height: auto;" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-12">
+                <div class="card" style="background-color: #000729;">
+                    <div class="card-body">
+                        <div class="media">
+                            <div class="media-body">
+                                <h2 class="mt-0" style="color: aqua;">Library Management System</h2>
+                                <p>
+                                    A multithreaded program to mimic the management system of a library. this
+                                    project was made based on JavaFX library of Java as a part of Object Oriented
+                                    Programming
+                                    Sessional course. <br /> <br />
+                                    <strong>Features:</strong><br />
+                                    &nbsp;
+                                    1. Multi-threaded architecture.<br />
+                                    &nbsp;
+                                    2. Networking among devices using java socket library. <br />
+                                    &nbsp;
+                                    3. Support for file transfer from client to server and vice versa
+                                </p>
+                                <img src="{% static 'portfolio.logo/java-logo.jpg' %}"
+                                    style="max-width: 15%; height: auto;" />
+                            </div>
+                            <img src="{% static 'portfolio.image/library.jpg' %}" class="ml-3" alt="..."
+                                style="max-width: 50%; height: auto;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-12">
+                <div class="card" style="background-color: #000729;">
+                    <div class="card-body">
+                        <div class="media">
+                            <img src="{% static 'portfolio.image/restaurant.png' %}" class="mr-3" alt="..."
+                                style="max-width: 50%; height: auto;">
+                            <div class="media-body">
+                                <h2 class="mt-0" style="color: aqua;">ConFusion</h2>
+                                <p>A demo website for a restaurant displaying their menu and management commity and also
+                                    option to get
+                                    feedback from customers. <br /> <br />
+                                    <strong>Features:</strong> <br />
+                                    &nbsp;
+                                    1. User login system.<br />
+                                    &nbsp;
+                                    2. Use of rest API. <br />
+                                    &nbsp;
+                                    3. Json web token authentication.<br />
+                                    &nbsp;
+                                    4. Feedback system for the customer. <br />
+                                    &nbsp;
+                                    5. OAuth 2.0 login system using Facebook.
+
+                                </p>
+                                <br />
+                                <p style="color: aquamarine;">
+                                    <img src="{% static 'portfolio.logo/nodjs-removebg.jpg' %}"
+                                        style="max-width: 15%; height: auto;" />
+                                    <img src="{% static 'portfolio.logo/react-logo.jpg' %}"
+                                        style="max-width: 15%; height: auto;" />
+                                    <img src="{% static 'portfolio.logo/mongodb-logo.jpg' %}"
+                                        style="max-width: 15%; height: auto;" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-12">
+                <div class="card" style="background-color: #000729;">
+                    <div class="card-body">
+                        <div class="media">
+                            <div class="media-body">
+                                <h2 class="mt-0" style="color: aqua;">Pacman</h2>
+                                <p>
+                                    A game developed using the iGraphics library of C programming language as a part of
+                                    Introduction to Programming Language Sessional course. <br /> <br />
+                                    <strong>Features:</strong><br />
+                                    &nbsp;
+                                    1. Multiple user's login.<br />
+                                    &nbsp;
+                                    2. Maintain scoring system to keep track of the high scores <br />
+
+                                </p>
+                                <img src="{% static 'portfolio.logo/c-logo.jpg' %}"
+                                    style="max-width: 15%; height: auto;" />
+                            </div>
+                            <img src="{% static 'portfolio.image/pacman.jpg' %}" class="ml-3" alt="..."
+                                style="max-width: 40%; height: auto;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-12">
+                <div class="card" style="background-color: #000729;">
+                    <div class="card-body">
+                        <div class="media">
+                            <img src="{% static 'portfolio.image/portfolio.png' %}" class="mr-3" alt="..."
+                                style="max-width: 50%; height: auto; border: aqua 1px solid;">
+                            <div class="media-body">
+                                <h2 class="mt-0" style="color: aqua;">Personal Portfolio</h2>
+                                <p>This website is made using django and bootstrap. It is hosted using the free web
+                                    hosting service
+                                    provided by PythonAnywhere. <br /> <br />
+                                    <strong>Features:</strong> <br />
+                                    &nbsp;
+                                    1. Display of skillsets, resume,personal projects and contact information<br />
+                                    &nbsp;
+                                    2. Hosted on the web using PythonAnywhere platform. <br />
+
+
+                                </p>
+                                <br />
+                                <p style="color: aquamarine;">
+                                    <img src="{% static 'portfolio.logo/django-logo.png' %}"
+                                        style="max-width: 15%; height: auto;" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 200px;">
+            <div class="col-12">
+                <div class="jumbotron text-center" style="background-color: #000729;">
+                    <h1 style="color: aqua;">Programming languages I use:</h1> <br />
+                    <img src="{% static 'portfolio.logo/c-logo.jpg' %}" style="max-width: 7%; height: auto;" />
+                    <img src="{% static 'portfolio.logo/c++-logo.png' %}" style="max-width: 7%; height: auto;" />
+                    <img src="{% static 'portfolio.logo/python-logo.png' %}" style="max-width: 7%; height: auto;" />
+                    <img src="{% static 'portfolio.logo/java-logo.jpg' %}" style="max-width: 7%; height: auto;" />
+                    <img src="{% static 'portfolio.logo/javascript-logo.png' %}" style="max-width: 6%; height: auto;" />
+                    <br />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
